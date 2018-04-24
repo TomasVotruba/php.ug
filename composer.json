@@ -1,46 +1,40 @@
 {
-     "name" : "php_ug/website",
-     "description" : "The website showing all PHP-Usergroups on the worldmap",
-     "license" : "MIT",
-     "minimum-stability": "stable",
-     "require": {
-         "ext-curl":                          "*",
-         "doctrine/doctrine-module":          "~0.8",
-         "doctrine/doctrine-orm-module":      "~0.8",
-         "zendframework/zendframework":       "~2.5",
-         "org_heigl/contact" :                "dev-master@dev",
-         "org_heigl/mailproxy" :              "dev-master@dev",
-         "org_heigl/hybridauth" :             "dev-feature/multipleProviders@dev",
-         "hybridauth/hybridauth" :            "@dev",
-         "sabre/vobject" :                    "~4.0@dev",
-         "monolog/monolog" :                  "~1.9",
-         "willdurand/geocoder" :              "~2.4",
-         "zendframework/zendservice-twitter": "~2.1",
-         "org_heigl/piwik" :                  "~1.0",
-         "rwoverdijk/assetmanager" :          "~1.4",
-          "org_heigl/geolocation": "^1.2",
-          "guzzlehttp/guzzle": "^6.2",
-          "org_heigl/dateintervalcomparator": "^1.0"
-     },
-     "require-dev" : {
-         "mockery/mockery": "~0.9",
-         "zendframework/zend-developer-tools" : "dev-master",
-         "phing/phing" : "~2.0"
-     },
-     "autoload" : {
-         "psr-0" : {
-             "Phpug\\" : "src/module/Phpug/src"
-         },
-         "psr-4" : {
-             "UgHealth\\" : "src/module/UgHealth/src/"
-         }
-     },
-     "autoload-dev" : {
-         "psr-0" : {
-             "PhpugTest\\" : "src/module/Phpug/tests"
-         },
-         "psr-4" : {
-             "UgHealthTest\\" : "src/module/UgHealth/tests/"
-         }
-     }
- }
+    "name": "php_ug/website",
+    "description": "The website showing all PHP-Usergroups on the worldmap",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1",
+        "ext-curl": "*",
+        "doctrine/doctrine-module": "^1.0",
+        "doctrine/doctrine-orm-module": "^1.0",
+        "guzzlehttp/guzzle": "^6.2",
+        "monolog/monolog": "^1.9",
+        "org_heigl/contact": "^1.0",
+        "org_heigl/dateintervalcomparator": "^1.0",
+        "org_heigl/geolocation": "^2.0",
+        "org_heigl/hybridauth": "^3.0",
+        "org_heigl/mailproxy": "^2.0",
+        "rwoverdijk/assetmanager": "^1.4",
+        "sabre/vobject": "^4.0@dev",
+        "willdurand/geocoder": "^2.4",
+        "zendframework/zendframework": "^3.0",
+        "zendframework/zend-mvc-plugin-flashmessenger": "^1.0",
+        "zendframework/zendservice-twitter": "^2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1",
+        "zendframework/zend-developer-tools": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+           "Phpug\\": "src/module/Phpug/src",
+           "UgHealth\\": "src/module/UgHealth/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+           "PhpugTest\\": "tests",
+           "UgHealthTest\\": "tests"
+        }
+    }
+}
