@@ -1,3 +1,4 @@
 .gitconfig
 src/config/autoload/*.local.php
 src/public/lib
+/vendor
