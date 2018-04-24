@@ -5,8 +5,6 @@
     "require": {
         "php": "^7.1",
         "ext-curl": "*",
-        "doctrine/doctrine-module": "^1.0",
-        "doctrine/doctrine-orm-module": "^1.0",
         "guzzlehttp/guzzle": "^6.2",
         "monolog/monolog": "^1.9",
         "org_heigl/contact": "^1.0",
@@ -16,14 +14,10 @@
         "org_heigl/mailproxy": "^2.0",
         "rwoverdijk/assetmanager": "^1.4",
         "sabre/vobject": "^4.0@dev",
-        "willdurand/geocoder": "^2.4",
-        "zendframework/zendframework": "^3.0",
-        "zendframework/zend-mvc-plugin-flashmessenger": "^1.0",
-        "zendframework/zendservice-twitter": "^2.1"
+        "willdurand/geocoder": "^2.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.1",
-        "zendframework/zend-developer-tools": "dev-master"
+        "phpunit/phpunit": "^7.1"
     },
     "autoload": {
         "psr-4": {
