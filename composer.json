@@ -14,10 +14,12 @@
         "org_heigl/mailproxy": "^2.0",
         "rwoverdijk/assetmanager": "^1.4",
         "sabre/vobject": "^4.0@dev",
-        "willdurand/geocoder": "^2.4"
+        "willdurand/geocoder": "^2.4",
+        "symplify/statie": "^4.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.1"
+        "phpunit/phpunit": "^7.1",
+        "symplify/easy-coding-standard": "^4.1"
     },
     "autoload": {
         "psr-4": {
